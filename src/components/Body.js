@@ -3,10 +3,11 @@ import { createBrowserRouter, useNavigate } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import Login from './Login';
 import Table from './Table';
+import RandomPage from './RandomPage';
 
 
 const Body = () => {
-
+  
 
     const approuter = createBrowserRouter([
         {
@@ -16,7 +17,11 @@ const Body = () => {
         {
             path:"/table",
             element:<Table/>
-        }
+        },
+        {
+          path:"/random",
+          element:<RandomPage/>
+      }
     ]);
 
 
