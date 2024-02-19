@@ -3,17 +3,17 @@ import React from 'react'
 const Table = () => {
   return (
     <div className='flex justify-center p-12'>
-    <table className="table-auto">
+    <table className="table-auto border border-slate-400 border-separate">
   <thead>
-  <tr>BORIVALI AFTERNOON ROUTE</tr>
-  <tr>DECEMBER 2023</tr>
-    <tr>
-      <th>SR.NO</th>
-      <th>DATE</th>
-      <th>VEHICAL</th>
-      <th>TRIP SHEET</th>
-      <th>DEL TRAY</th>
-      <th>RET TRAY</th>
+  <tr className='bg-gray-300'>BORIVALI AFTERNOON ROUTE</tr>
+  <tr className='bg-gray-300'>December 2023</tr>
+    <tr className='bg-gray-300'>
+      <th className='border border-slate-300'>SR.NO</th>
+      <th className='border border-slate-300'>DATE</th>
+      <th className='border border-slate-300'>VEHICAL</th>
+      <th className='border border-slate-300'>TRIP SHEET</th>
+      <th className='border border-slate-300'>DEL TRAY</th>
+      <th className='border border-slate-300'>RET TRAY</th>
     </tr>
   </thead>
   <tbody>
