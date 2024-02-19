@@ -3,7 +3,7 @@ import React from 'react'
 const Table = () => {
   return (
     <div className='flex justify-center p-12'>
-    <table className="table-auto border border-slate-400 border-separate">
+    <table className="table-auto border border-slate-400 border-separate rounded-md">
   <thead>
   <tr className='bg-gray-300'>BORIVALI AFTERNOON ROUTE</tr>
   <tr className='bg-gray-300'>December 2023</tr>
