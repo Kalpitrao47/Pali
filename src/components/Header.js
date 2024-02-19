@@ -5,12 +5,11 @@ const Header = () => {
   return (
     <div>
         <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/form">Form</Link></li>
-          <li><Link to="/fetch">Fetch</Link></li>
+        <ul className='flex justify-between border border-black'>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/table">Table</Link></li>
+          <li><Link to="/random">Random Page</Link></li>
+          
         </ul>
       </nav>
     </div>
