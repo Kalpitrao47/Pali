@@ -6,10 +6,19 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    if (email && password) {
-      return null; 
-    } else {
-      alert('Please fill in both email and password fields.');
+    // Regex for email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // Regex for password validation (at least 8 characters, 1 uppercase, 1 lowercase, 1 number)
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email.');
+      return;
+    }
+
+    if (!passwordRegex.test(password)) {
+      alert('Password must be at least 8 characters, with at least one uppercase letter, one lowercase letter, and one number.');
+      return;
     }
   };
 
